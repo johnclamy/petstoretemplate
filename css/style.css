@@ -48,6 +48,33 @@ address {
 
 
 /* ===============
+    Widget Styles
+   =============== 
+*/
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--black);
+    margin: 0.5em 0;
+    border-radius: 5px;
+    width: max-content !important;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+
+
+/* ===============
     Header Styles
    =============== 
 */
@@ -85,7 +112,7 @@ address.page-header__top__info {
 }
 
 
-/* media query for the top header section */
+/* media query for the top header section (800px) */
 
 @media (min-width: 55em) {
     .page-header__top {
@@ -111,7 +138,7 @@ address.page-header__top__info {
 
 .navbar {
     background-color: var(--white);
-    padding: 1em 2em;  
+    padding: 1em 1.5em 1em 1.3em;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -162,7 +189,28 @@ address.page-header__top__info {
     display: block;
 }
 
-.btn .line-separator {
-    border: 2px solid var(--primary);
-    border-radius: 25px;
+
+
+
+/* tablet and small laptop layout */
+
+@media (min-width: 55em) {
+    .navlinks {
+        justify-content: flex-start;
+    }
+
+    .navlinks__item {
+        display: block;
+        order: initial;
+        width: auto;
+        text-align: initial;
+    }
+
+    .navlinks__hamburger {
+        display: none;
+    }
+
+    .navlinks__item a {
+        padding: 0 1em;
+    }
 }
