@@ -53,25 +53,12 @@ address {
 */
 
 .btn {
-    display: inline-block;
-    padding: 0.5em 1em;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid var(--black);
-    margin: 0.5em 0;
+    border: none;
     border-radius: 5px;
-    width: max-content !important;
+    font-weight: 600;
     text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s ease;
+    padding: 0.6em 1.2em;
 }
-
-.btn-primary {
-    background-color: var(--primary);
-}
-
 
 
 /* ===============
@@ -167,12 +154,23 @@ address.page-header__top__info {
     text-decoration: none;
 }
 
-.navlinks__item .btn {
+.navlinks__item.btn {
     order: 2;
 }
 
-.navlinks__item:not(.btn) a:hover,
+.navlinks__item.btn a {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--off-white);
+    border-radius: 25px; 
+}
+
 .navlinks__item.btn a:hover {
+    background-color: var(--accent);
+}
+
+.navlinks__item:not(.btn) a:hover,
+.navlinks__item a:hover::after {
     text-decoration: underline;
 }
 
