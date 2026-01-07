@@ -215,27 +215,41 @@ address.page-header__top__info {
 }
 
 
-
-
 /* large screen layout (1170px) */
 
-/* @media (min-width: 73.125em) {
-    .navlinks {
+@media (min-width: 73.125em) {
+
+    .navbar {
+        display: flex;
         justify-content: center;
     }
 
+    .navlinks {
+        justify-content: flex-start;
+        align-items: center;    
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .navlinks__logo {
+        order: 0;
+        max-width: fit-content;
+        align-self: center;
+        padding-top: 0.4em
+    }
+
     .navlinks__item {
+        position: relative;
         display: block;
-        order: initial;
         width: auto;
-        text-align: initial;
+        order: 1;
+    }
+
+    .btn {
+        order: 2;
     }
 
     .navlinks__hamburger {
         display: none;
     }
-
-    .navlinks__item a {
-        padding: 0 1em;
-    }
-} */
+}
