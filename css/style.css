@@ -190,11 +190,38 @@ address.page-header__top__info {
 
 
 
-/* tablet and small laptop layout */
+/* tablet and small laptop layout (880px) */
 
 @media (min-width: 55em) {
     .navlinks {
-        justify-content: flex-start;
+        justify-content: center;
+    }
+
+    .navlinks__logo {
+        flex: 1;
+    }
+
+    .navlinks__item.btn {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .navlinks__hamburger {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+}
+
+
+
+
+/* large screen layout (1170px) */
+
+/* @media (min-width: 73.125em) {
+    .navlinks {
+        justify-content: center;
     }
 
     .navlinks__item {
@@ -211,4 +238,4 @@ address.page-header__top__info {
     .navlinks__item a {
         padding: 0 1em;
     }
-}
+} */
