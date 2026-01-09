@@ -61,6 +61,11 @@ address {
 }
 
 
+/* ===================================================================================
+   ==========================  INDEX.HTML PAGE  ======================================
+   =================================================================================== 
+*/
+
 /* ===============
     Header Styles
    =============== 
@@ -245,6 +250,10 @@ address.page-header__top__info {
         order: 1;
     }
 
+    .navlinks__item.btn {
+        margin-left: 1em;
+    }
+
     .btn {
         order: 2;
     }
@@ -253,3 +262,24 @@ address.page-header__top__info {
         display: none;
     }
 }
+
+
+/* ===============
+     Hero Styles
+   =============== 
+*/
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.hero-banner {
+    background: url(/assets/hero-banner-img.jpg) no-repeat center/cover;
+    padding: 6em 1em;
+    height: 18.75em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
