@@ -46,6 +46,11 @@ address {
     font-weight: 400;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* ===============
     Widget Styles
@@ -220,9 +225,9 @@ address.page-header__top__info {
 }
 
 
-/* large screen layout (1170px) */
+/* large screen layout  */
 
-@media (min-width: 73.125em) {
+@media (min-width: 1200px) {
 
     .navbar {
         display: flex;
@@ -240,7 +245,8 @@ address.page-header__top__info {
         order: 0;
         max-width: fit-content;
         align-self: center;
-        padding-top: 0.4em
+        padding-top: 0.4em;
+        margin-left: 1em;
     }
 
     .navlinks__item {
@@ -248,10 +254,6 @@ address.page-header__top__info {
         display: block;
         width: auto;
         order: 1;
-    }
-
-    .navlinks__item.btn {
-        margin-left: 1em;
     }
 
     .btn {
@@ -269,10 +271,6 @@ address.page-header__top__info {
    =============== 
 */
 
-.container {
-    max-width: 1480px;
-    margin: 0 auto;
-}
 
 .hero-banner {
     background: url(/assets/hero-banner-img.jpg) no-repeat center/cover;
