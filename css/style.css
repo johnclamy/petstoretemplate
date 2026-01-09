@@ -280,4 +280,48 @@ address.page-header__top__info {
     justify-content: flex-start;
 }
 
+.hero-banner__content {
+    padding: 1.25em 1.875em;
+    color: var(--white);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
+.hero-banner__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.hero-banner__info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 0.5em 0 1.5em 0;
+    max-width: 15em;
+}
+
+
+@media (min-width: 55em) {
+    .hero-banner {
+        height: 25em;
+        padding: 8em 2em;
+    }
+
+    .hero-banner__title {
+        font-size: 2.5rem;
+    }
+
+    .hero-banner__info {
+        font-size: 1.5rem;
+        max-width: 20em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-banner__info {
+        max-width: 18em;
+    }
+}
