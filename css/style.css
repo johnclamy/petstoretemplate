@@ -273,7 +273,8 @@ address.page-header__top__info {
 
 
 .hero-banner {
-    background: url(/assets/hero-banner-img.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(/assets/hero-banner-img.jpg) no-repeat center/cover;
     padding: 6em 1em;
     height: 18.75em;
     display: flex;
@@ -301,6 +302,22 @@ address.page-header__top__info {
     font-size: 1.2rem;
     margin: 0.5em 0 1.5em 0;
     max-width: 15em;
+}
+
+.hero-banner__btn {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary);
+    color: var(--off-white);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-banner__btn:hover {
+    background-color: var(--third);
+    color: var(--black);
 }
 
 
