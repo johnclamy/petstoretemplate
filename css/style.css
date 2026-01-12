@@ -93,6 +93,12 @@ address.page-header__top__info {
     gap: 2em;    
 }
 
+
+address.page-header__top__info a {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
 .page-header__top__social-links {
     margin-top: 1em;
     text-align: center;
