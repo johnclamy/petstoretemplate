@@ -113,10 +113,24 @@ address.page-header__top__info {
     gap: 2em;    
 }
 
+address.page-header__top__info a[href^="tel:"]::before {
+    content: "\260E";
+    padding: .25em .25em .25em 0;
+}
 
-address.page-header__top__info a {
-    color: var(--off-white);
+address.page-header__top__info a:link {
+    background-color: var(--third);
+    color: var(--black);
     text-decoration: none;
+    padding: 0.2em 0.5em;
+    border-radius: 8px;
+}
+
+
+
+address.page-header__top__info a:hover {
+    background-color: var(--secondary);
+    color: var(--white);
 }
 
 .page-header__top__social-links {
