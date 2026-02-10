@@ -1,0 +1,8 @@
+.vscode/
+__pycache__/
+dist/
+.coverage*
+htmlcov/
+.tox/
+.venv/
+docs/_build/
