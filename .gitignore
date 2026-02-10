@@ -5,4 +5,5 @@ dist/
 htmlcov/
 .tox/
 .venv/
+.flaskenv
 docs/_build/
