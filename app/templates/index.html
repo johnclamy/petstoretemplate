@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microblog | {{ title }}</title>
-</head>
-<body>
-    <div>
-        <header>
-            <h1>Hello, {{ user.username }}</h1>
-        </header>
-    </div>
-</body>
-</html>
+{% extends "base.html" %}
+
+
+{% block content %}
+    <main>
+        <section class="hero">
+            <header>
+                <h1>Hi, I'm {{ user.username }}</h1>
+            </header>
+        </section>
+        <ul>
+            {% for post in posts %}
+            <li>
+                <p><strong>{{ post.author.username }}</strong> posted: {{ post.body }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+{% endblock %}
