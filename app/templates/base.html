@@ -20,6 +20,17 @@
                 <a href="/login">Sign in</a>
             </nav>
         </header>
+        <section class="error-msgs">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+        </section>
         <div class="content">
             {% block content %}{% endblock %}
         </div>
