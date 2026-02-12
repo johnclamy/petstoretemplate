@@ -12,12 +12,12 @@
 <body>
     <div>
         <header>
-            <a href="/"><b>Microblog</b></a>
+            <a href="{{ url_for('index') }}"><b>Microblog</b></a>
             <nav>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/login">Sign in</a>
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+                <a href="{{ url_for('login') }}">Sign in</a>
             </nav>
         </header>
         <section class="error-msgs">
@@ -30,7 +30,7 @@
             </ul>
             {% endif %}
             {% endwith %}
-        </section>
+        </section> 
         <div class="content">
             {% block content %}{% endblock %}
         </div>
